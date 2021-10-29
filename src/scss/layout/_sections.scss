@@ -1,0 +1,268 @@
+section {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    width: calc(100vw - 60px);
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @include breakpoint(mobileonly) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &.over {
+        ul li {
+            i {
+                color: $primary;
+                margin-right: 15px;
+            }
+        }
+
+        img {
+            width: 100%;
+
+            @include breakpoint(mobileonly) {
+                width: calc(100vw - 120px);
+                text-align: center;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+
+        .desc {
+
+            h1 {
+                font-size: calc(30px + 1.5vw);
+                margin-bottom: 30px;
+            }
+
+            [class^="icon-"]::before,
+            [class*=" icon-"]::before {
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-style: normal;
+                display: inline-block;
+                text-decoration: inherit;
+            }
+
+            .fa-check:before {
+                background: -webkit-gradient(linear, left top, left bottom, from($green), to($blue));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+        }
+    }
+
+    &.stappen {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        background: $alt-bg;
+
+        .col {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            @include breakpoint(mobileonly) {
+                text-align: left;
+                min-width: calc(100vw - 120px);
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            i {
+                color: $primary;
+                font-size: 60px;
+                margin-top: 35px;
+                margin-bottom: 35px;
+            }
+
+            [class^="icon-"]::before,
+            [class*=" icon-"]::before {
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-style: normal;
+                display: inline-block;
+                text-decoration: inherit;
+            }
+
+            .fa-mountain:before {
+                font-size: 60px;
+                background: -webkit-gradient(linear, left top, left bottom, from(#0aa5cb), to(#75bba2));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+
+            .fa-head-side-brain:before {
+                font-size: 60px;
+                background: -webkit-gradient(linear, left top, left bottom, from(#fca644), to(#ffe063));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+
+            .fa-trophy:before {
+                font-size: 60px;
+                background: -webkit-gradient(linear, left top, left bottom, from(#f77351), to(#ff5ba6));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+        }
+    }
+
+    &.categories {
+        background: $white-bg;
+
+        .col {
+            @include breakpoint(mobileonly) {
+                min-width: calc(100vw - 120px);
+            }
+        }
+
+        h1 {
+            font-size: calc(30px + 1.5vw);
+            margin-bottom: 40px;
+
+        }
+
+
+        .category {
+            background: $white;
+            padding: 40px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07), 0 6px 6px rgba(0, 0, 0, 0.10);
+            @include transition(all .3s ease);
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.14), 0 6px 6px rgba(0, 0, 0, 0.19);
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            i {
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+
+
+            [class^="icon-"]::before,
+            [class*=" icon-"]::before {
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-style: normal;
+                display: inline-block;
+                text-decoration: inherit;
+            }
+
+            .fa-calculator-alt:before {
+                font-size: 50px;
+                background: -webkit-gradient(linear, left top, left bottom, from($blue), to($green));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+
+            .fa-history:before {
+                font-size: 50px;
+                background: -webkit-gradient(linear, left top, left bottom, from($orange), to($yellow));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+
+            .fa-book:before {
+                font-size: 50px;
+                background: -webkit-gradient(linear, left top, left bottom, from($red), to($pink));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+
+            .fa-flask:before {
+                font-size: 50px;
+                background: -webkit-gradient(linear, left top, left bottom, from($blue), to($green));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+
+            .fa-globe-europe:before {
+                font-size: 50px;
+                background: -webkit-gradient(linear, left top, left bottom, from($orange), to($yellow));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+
+            .fa-books:before {
+                font-size: 50px;
+                background: -webkit-gradient(linear, left top, left bottom, from($red), to($pink));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: initial;
+            }
+
+
+        }
+    }
+
+    &.partners {
+        background: $alt-bg;
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+
+        img.partners {
+            -webkit-backface-visibility: hidden;
+            -ms-transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            width: 100%;
+            max-width: 150px;
+            opacity: 0.3;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            @include transition(all .3s ease);
+            filter: grayscale(100%);
+        }
+
+        img.partners:hover {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+
+    }
+
+    &.download {
+        background: $white-bg;
+
+        h1 {
+            font-size: calc(30px + 1.5vw);
+            margin-bottom: 40px;
+
+        }
+
+        a.button {
+            margin-right: 40px;
+            margin-top: 30px;
+
+            i {
+                margin-right: 10px;
+
+            }
+        }
+    }
+}

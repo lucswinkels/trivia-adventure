@@ -1,0 +1,101 @@
+// Base Styling
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:after,
+    &:before {
+        box-sizing: border-box;
+    }
+
+    &:active,
+    &:focus {
+        outline: 0;
+    }
+}
+
+// Body Styles
+body,
+html {
+    width: 100%;
+}
+
+body {
+    overflow: overlay;
+    background-image: url(../img/header/header.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include breakpoint(tablet) {
+        background: white;
+    }
+
+    &.contact {
+        background: white;
+    }
+}
+
+// Selection
+::-moz-selection {
+    background: $black;
+    color: white;
+}
+
+::selection {
+    background: $black;
+    color: white;
+}
+
+// Clearfix
+.c-f {
+
+    &:after,
+    &:before {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+// Responsiveness
+.mobile-hidden {
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
+}
+
+.mobile-visible {
+    visibility: hidden;
+
+    @include breakpoint(mobileonly) {
+        visibility: visible;
+    }
+}
+
+// Flexbox variable
+%flexbox {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 9px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}

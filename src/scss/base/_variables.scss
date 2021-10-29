@@ -1,0 +1,33 @@
+// Imports
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700");
+// Fonts
+$font-heading: Poppins,
+sans-serif;
+$font-paragraph: Lato,
+sans-serif;
+$font-links: Lato,
+sans-serif;
+$font-buttons: Lato,
+sans-serif;
+$font-nav: Lato,
+sans-serif;
+// Whites
+$white: #ffffff;
+$blue-white: #f9fbfc;
+// Blacks
+$black: #000;
+$alt-black: #181818;
+$lighter-black: #555;
+// Colors
+$blue: #0aa5cb;
+$green: #75bba2;
+$yellow: #ffe063;
+$orange: #fca644;
+$red: #f77351;
+$pink:#ff5ba6;
+// Backgrounds
+$white-bg: $white;
+$alt-bg: $blue-white;
+// Primary
+$primary: $black;

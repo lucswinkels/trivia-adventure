@@ -1,0 +1,22 @@
+a.button {
+    font-family: $font-buttons;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 20px 30px;
+    font-size: 12px;
+    @include border-radius(5px);
+    @include transition(all .3s ease);
+    display: inline-block;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.14), 0 6px 6px rgba(0, 0, 0, 0.19);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.34), 0 6px 6px rgba(0, 0, 0, 0.39);
+    }
+}
+
+a.btn--black {
+    color: white;
+    background: black;
+}

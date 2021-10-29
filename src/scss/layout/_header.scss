@@ -1,0 +1,43 @@
+header {
+    min-height: 56vh;
+    width: calc(100vw - 60px);
+    padding-top: 22vh;
+    padding-bottom: 22vh;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    &.contact-header {
+        min-height: auto;
+
+        h1 {
+            font-size: calc(30px + 2.5vw);
+        }
+
+        .contact-right {
+            @include breakpoint(mobileonly) {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    h1 {
+        font-size: calc(30px + 1.7vw);
+        line-height: calc(30px + 3vw);
+    }
+
+    span {
+        font-weight: bold !important;
+        font-family: 'Poppins', sans-serif !important;
+    }
+
+    p {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        max-width: 80%;
+    }
+
+    a.button {
+        margin-right: 40px;
+        margin-top: 30px;
+    }
+}

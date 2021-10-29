@@ -1,0 +1,36 @@
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-heading;
+    font-weight: bold;
+    color: $black;
+}
+
+p {
+    font-family: $font-paragraph;
+    color: $lighter-black;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+span {
+    font-family: $font-paragraph;
+}
+
+a {
+    font-family: $font-links;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
